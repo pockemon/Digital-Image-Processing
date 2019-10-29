@@ -1,0 +1,3 @@
+close all
+i = imread('cameraman.tif')
+figure(),imshow(i)
