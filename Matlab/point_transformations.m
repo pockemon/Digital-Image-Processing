@@ -8,6 +8,7 @@ a2 = a1-100
 %figure(),imshow(uint8(a1))
 %figure(),imshow(uint8(a2))
 
+%adding will increase brightness 
 b = imadd(i,100)
 figure(),imshow(uint8(b))
 b = imsubtract(i,30)
