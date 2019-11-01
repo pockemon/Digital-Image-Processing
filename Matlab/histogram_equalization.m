@@ -1,6 +1,8 @@
 %Contrast stretching and Histogram stretching
 close all
-i = imread('pout.jpeg')
+i = imread('pout.jpeg');
+i1 = imread('img1.png');
+i2 = imread('img2.png')
 figure,imshow(i)
 %figure,imhist(i(:,:,1)); red channel
 %figure,imhist(i(:,:,2)); green channel
@@ -17,3 +19,5 @@ img2 = histeq(rgb2gray(i))
 figure,imshow(img2),title('Hist eq image')
 figure,imhist(img2),title('Histogram of Hist eq image')
 
+c = imhistmatch(i1,i2);
+imtool(c,[])
